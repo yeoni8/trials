@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/researcher', function () {
+    return view('adminlte/adminlte');
+});
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
