@@ -3,7 +3,7 @@
 
     @include('adminlte/htmlhead')
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-menu">
 <div class="wrapper">
 
     <!-- Main Header -->
