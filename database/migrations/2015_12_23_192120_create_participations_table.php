@@ -15,7 +15,6 @@ class CreateParticipationsTable extends Migration
         Schema::create('participations', function (Blueprint $table) {
 
             $table->increments('id');
-
             $table->text('participant_comment');
 
             $table->integer('participant_id')->unsigned();

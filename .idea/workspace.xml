@@ -25,8 +25,8 @@
       <file leaf-file-name="2015_12_23_192120_create_participations_table.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_23_192120_create_participations_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42857143">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.35714287">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -43,6 +43,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2015_12_23_182106_create_researchers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_12_23_183255_create_trials_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_12_23_182120_create_participations_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_12_23_192120_create_participations_table.php" />
       </list>
     </option>
   </component>
@@ -273,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_23_192120_create_participations_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42857143">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.35714287">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding />
         </state>
       </provider>
