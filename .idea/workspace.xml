@@ -22,27 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ResearcherController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ResearcherController.php">
+      <file leaf-file-name="2015_12_24_164148_AddDateToParticipation.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_24_164148_AddDateToParticipation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6904762">
-              <caret line="41" column="125" selection-start-line="41" selection-start-column="125" selection-end-line="41" selection-end-column="125" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1450972627087" expanded="true" signature="1144:1212" placeholder="SELECT * FRO..participants..." />
-                <marker date="1450972627087" expanded="true" signature="1144:1224" placeholder="SELECT * FRO..participants..." />
-                <marker date="1450972627087" expanded="true" signature="1144:1249" placeholder="SELECT * FRO..participants..." />
-                <marker date="1450972627087" expanded="true" signature="1144:1250" placeholder="SELECT * FRO..participants..." />
-              </folding>
+            <state vertical-scroll-proportion="0.6666667">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trial.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/adminlte/sections/trial.blade.php">
+      <file leaf-file-name="2015_12_23_182040_create_pariticpants_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_23_182040_create_pariticpants_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="16" selection-end-line="21" selection-end-column="13" />
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -83,6 +77,7 @@
         <option value="$PROJECT_DIR$/resources/views/adminlte/components/htmlhead.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/adminlte/sections/trial.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ResearcherController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_12_24_164148_AddDateToParticipation.php" />
       </list>
     </option>
   </component>
@@ -257,14 +252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64565825">
           <caret line="382" column="32" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_23_182040_create_pariticpants_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47619048">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -475,25 +462,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ResearcherController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2857143">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <marker date="1450975184201" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..participants..." />
+            <marker date="1450975184201" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..participants..." />
+            <marker date="1450975184201" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..participants..." />
+            <marker date="1450975184201" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..participants..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/adminlte/sections/trial.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
+        <state vertical-scroll-proportion="0.35714287">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="16" selection-end-line="21" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ResearcherController.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_23_182040_create_pariticpants_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6904762">
-          <caret line="41" column="125" selection-start-line="41" selection-start-column="125" selection-end-line="41" selection-end-column="125" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1450972627087" expanded="true" signature="1144:1212" placeholder="SELECT * FRO..participants..." />
-            <marker date="1450972627087" expanded="true" signature="1144:1224" placeholder="SELECT * FRO..participants..." />
-            <marker date="1450972627087" expanded="true" signature="1144:1249" placeholder="SELECT * FRO..participants..." />
-            <marker date="1450972627087" expanded="true" signature="1144:1250" placeholder="SELECT * FRO..participants..." />
-          </folding>
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_24_164148_AddDateToParticipation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6666667">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

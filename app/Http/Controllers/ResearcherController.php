@@ -30,25 +30,27 @@ class ResearcherController extends Controller
         $data['researcher'] = Researcher::find(2);
         $data['myTrials'] = Trial::where('researcher_id','=',$data['researcher']->id)->get();
         $data['pageTitle'] = 'Viewing a trial';
-//        $data['participations'] = Participation::where('trial_id','=',$trialid)->get();
-        $data['participants'] = Participant::where('trial_id','=',$trialid)->get();
+        $data['participations'] = Participation::where('trial_id','=',$trialid)->get();
+//        $data['participants'] = Participant::where('trial_id','=',$trialid)->get();
 
-        $a = DB::table('participants')->join('participations')->where('trial_id','=',$trialid)->groupBy('participants.id')->get();
-
-        die;
+//        $a = DB::table('participants')->join('participations')->where('trial_id','=',$trialid)->groupBy('participants.id')->get();
 
 
 
-        $query = 'SELECT * FROM participants INNER JOIN participations WHERE trial_id='.$trialid.' GROUP BY participants.id';
+//        $query = 'SELECT * FROM participants INNER JOIN participations WHERE trial_id='.$trialid.' GROUP BY participants.id';
         $total = $male = $female = 0;
 
         foreach ($data['participations'] as $p){
 
             $total++;
+            $r = rand()%3%2;
 
-            if ($p->sex=='m'){
+            if ($r % 2){
+
+
                 $male++;
             } else {
+
                 $female++;
             }
 
