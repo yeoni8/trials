@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-    @include('adminlte/htmlhead')
+    @include('adminlte/components/htmlhead')
 
 <body class="hold-transition skin-blue sidebar-menu">
 <div class="wrapper">
 
     <!-- Main Header -->
-    @include('adminlte/header')
+    @include('adminlte/components/header')
     <!-- Left side column. contains the logo and sidebar -->
-    @include('adminlte/sidebar  ')
+    @include('adminlte/components/sidebar  ')
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -36,14 +36,14 @@
     <!-- /.content-wrapper -->
 
     <!-- Main Footer -->
-    @include('adminlte/footer')
+    @include('adminlte/components/footer')
     <!-- Control Sidebar -->
-    @include('adminlte/controlsidebar')
+    @include('adminlte/components/controlsidebar')
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED JS SCRIPTS -->
 
-    @include('adminlte/scripts')
+    @include('adminlte/components/scripts')
 </body>
 </html>

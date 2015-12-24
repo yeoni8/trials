@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/researcher', function () {
-    return view('adminlte/adminlte');
-});
+Route::get('/researcher', 'ResearcherController@index');
+
+
 
 
 /*
