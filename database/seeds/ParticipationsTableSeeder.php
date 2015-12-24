@@ -19,7 +19,7 @@ class ParticipationsTableSeeder extends Seeder
         $maxTrialID = Trial::count();
 
 
-        for ($i=0; $i<10; $i++){
+        for ($i=0; $i<1000; $i++){
             $p = new Participation();
             $p->participant_id = rand(1,$maxParticipantID);
             $p->trial_id = rand(1,$maxTrialID);

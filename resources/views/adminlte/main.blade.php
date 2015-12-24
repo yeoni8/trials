@@ -43,5 +43,6 @@
 <!-- REQUIRED JS SCRIPTS -->
 
     @include('adminlte/components/scripts')
+    @yield('specific_scripts')
 </body>
 </html>
