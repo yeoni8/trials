@@ -14,10 +14,22 @@ class ResearcherController extends Controller
 {
     public function index(){
 
-        return Trial::where('researcher_id','=',2)->get();
+        $data['researcher'] = Researcher::find(2);
+        $data['myTrials'] = Trial::where('researcher_id','=',$data['researcher']->id)->get();
+        $data['pageTitle'] = 'Home';
 
-        return Researcher::all();
+        return view('adminlte\main',$data);
+    }
 
+
+    public function trial($trialid){
+
+        $data['trial'] = Trial::find($trialid);
+        $data['researcher'] = Researcher::find(2);
+        $data['myTrials'] = Trial::where('researcher_id','=',$data['researcher']->id)->get();
+        $data['pageTitle'] = 'Viewing a trial';
+
+        return view('adminlte\sections\trial', $data);
     }
     //
 }

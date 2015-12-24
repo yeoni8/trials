@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/researcher', 'ResearcherController@index');
+Route::get('/researcher/trial/{trial_id}', 'ResearcherController@trial');
 
 
 
