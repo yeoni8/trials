@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Participation;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -28,6 +29,7 @@ class ResearcherController extends Controller
         $data['researcher'] = Researcher::find(2);
         $data['myTrials'] = Trial::where('researcher_id','=',$data['researcher']->id)->get();
         $data['pageTitle'] = 'Viewing a trial';
+        $data['participations'] = Participation::where('trial_id','=',$trialid);
 
         return view('adminlte\sections\trial', $data);
     }
