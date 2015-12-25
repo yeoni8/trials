@@ -13,7 +13,7 @@ class TrialsTableSeeder extends Seeder
     public function run()
     {
 
-        for ($i=0; $i<10; $i++){
+        for ($i=0; $i<50; $i++){
             $t = new Trial();
             $t->researcher_id = rand(1,4);
             $t->name = 'a test ' . rand();

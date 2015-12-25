@@ -11,11 +11,16 @@ class ResearcherTableSeeder extends Seeder
      */
     public function run()
     {
-        $r = new \App\Researcher();
-        $r->name = 'Dr. Quermo\'s research group';
-        $r->organization = 'Technion IE faculty';
-        $r->description = 'Research under the supervision of Dr. Quermo';
-        $r->save();
+
+
+        for ($i=0; $i<10; $i++){
+            $r = new \App\Researcher();
+            $r->name = 'Dr. Quermo\'s research group ' . rand(1,20);
+            $r->organization = 'Technion IE faculty';
+            $r->description = 'Research under the supervision of Dr. Quermo';
+            $r->save();
+        }
+
         //
         //
     }

@@ -18,6 +18,11 @@ Route::get('/', function () {
 Route::get('/researcher', 'ResearcherController@index');
 Route::get('/researcher/trial/{trial_id}', 'ResearcherController@trial');
 
+Route::get('/trials',function(){
+
+    return App\Trial::all();
+});
+
 
 
 
