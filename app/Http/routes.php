@@ -12,12 +12,17 @@
 */
 
 Route::get('/', function () {
-//    return view('welcome');
-    return redirect('/researcher/trial/2');
+
+
+    return view('welcome');
+//    return redirect('/researcher/trial/2');
 });
 
 Route::get('/researcher', 'ResearcherController@index');
 Route::get('/researcher/trial/{trial_id}', 'ResearcherController@trial');
+Route::get('/researcher/trial/{trial_id}/participants/', 'ResearcherController@trialparticipants');
+
+Route::get('/participant/{participant_id}','ParticipantController@index');
 
 Route::get('/trials',function(){
 

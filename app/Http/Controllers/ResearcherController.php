@@ -24,39 +24,34 @@ class ResearcherController extends Controller
     }
 
 
+    public function trialparticipants($trialid){
+
+        $trial = Trial::find($trialid);
+        $data['participants'] = $trial->participants()->get();
+
+
+//        $data['participants'] = $trial->getParticipants();
+//        $data['participants'] = $trial->participants();
+
+//        dump($data['participants']);
+        return view('adminlte\sections\trialparticipants',$data);
+    }
+
     public function trial($trialid){
 
         $data['trial'] = Trial::find($trialid);
         $data['researcher'] = Researcher::find(2);
         $data['myTrials'] = Trial::where('researcher_id','=',$data['researcher']->id)->get();
         $data['pageTitle'] = 'Viewing a trial';
-        $data['participations'] = Participation::where('trial_id','=',$trialid)->get();
-//        $data['participants'] = Participant::where('trial_id','=',$trialid)->get();
+        $data['participants'] = $data['trial']->participants()->get();
 
-//        $a = DB::table('participants')->join('participations')->where('trial_id','=',$trialid)->groupBy('participants.id')->get();
+        $male = $female = 0;
 
-
-
-//        $query = 'SELECT * FROM participants INNER JOIN participations WHERE trial_id='.$trialid.' GROUP BY participants.id';
-        $total = $male = $female = 0;
-
-        foreach ($data['participations'] as $p){
-
-            $total++;
-            $r = rand()%3%2;
-
-            if ($r % 2){
+        foreach ($data['participants'] as $p)
+            $p->sex=='m' ? $male++ : $female++;
 
 
-                $male++;
-            } else {
-
-                $female++;
-            }
-
-        }
-
-        $chartData = ['labels'=>['Total', 'Male', 'Female'], 'datasets'=>[['data'=>[$total,$male,$female]]]];
+        $chartData = ['labels'=>['Total', 'Male', 'Female'], 'datasets'=>[['data'=>[$male+$female,$male,$female]]]];
 
 
         $data['chartData'] = json_encode($chartData);
