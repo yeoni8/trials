@@ -1,0 +1,119 @@
+.trial{
+    position: relative;
+    border: 4px #333333 solid;
+    margin: 3vw;
+    background:white;
+}
+
+
+
+
+.topbar{
+    background:white;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333333;
+    text-align: right;
+    font-size: 30px;
+    padding-right: 10px;
+    padding-left: 7px;
+}
+
+body{
+    background: linear-gradient(rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.7)), url('bg.jpg');
+}
+.info{
+    width: 100%;
+    background: url('taub.jpg');
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('taub.jpg');*/
+    background-size: cover;
+    /*height: 280px;*/
+    color: white;
+    padding: 3vw;
+    position:relative;
+    text-shadow: 2px 2px 2px rgba(20, 20, 20, 1);
+    overflow:visible;
+}
+
+.info small{
+    color:white
+}
+
+.icons{
+    position:absolute;
+    top:-4px;
+    padding-right:5px;
+    padding-left:5px;
+    right:-4px;
+    font-size: 20px;
+    background:white;
+    /*border-left:solid 4px #333333;*/
+    /*border-bottom:solid 4px #333333;*/
+    border:solid 4px #333333;
+    color:#333333;
+    text-shadow: none;
+}
+
+.info p {
+    margin-top: 7vw;
+}
+
+.textbg{
+    margin-top: 17px;
+    margin-bottom: 5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 3vw;
+    padding-bottom: 3px;
+}
+
+.info h2{
+    margin: 0;
+}
+
+.important{
+    font-weight:bold;
+    border-top: 2px #333333 solid;
+    border-bottom: 2px #333333 solid;
+    text-align: center;
+    font-size: 40px;
+    padding-left:15vw;
+    padding-right:15vw;
+}
+
+.payment{
+    /*float:left;*/
+    /*margin-left: 20px;*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 5px;*/
+}
+
+.duration{
+    float: right;
+    font-size:80%;
+    padding-top: 5px;
+    font-weight:normal;
+    border-left: 2px solid #333333;
+    margin-left: 4px;
+    padding-left: 4px;
+    padding-bottom: 2px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#map{
+    height: 80px;
+}
+
+
+.options{
+    border: 4px solid #333333;
+    background: white;
+    margin:3vw;
+    font-size:50px;
+    padding-top: 5px;
+    padding-left:100px;
+    padding-right:100px;
+    padding-bottom:10px;
+
+}

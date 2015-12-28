@@ -1,0 +1,53 @@
+<!--angular directive of a trial-->
+
+<div class="trial">
+
+
+
+
+    <div class="info">
+
+        <div class="textbg">
+            <div class="price">
+                {{trial.price}}
+            </div>
+
+            <h2>{{trial.name}}<br><small>{{trial.researcher}}</small></h2>
+
+            <p class="description">
+                {{trial.description}}
+            </p>
+
+            <p class="requirements">
+                Requirements: {{trial.requirements}}
+            </p>
+
+            <p class="location" style="margin-bottom:0">
+                {{trial.location}}
+            </p>
+        </div>
+
+        <div class="iconsbar">
+            <div class="icons">
+                <div class="duration">
+                    {{trial.duration}}
+                </div>
+                <i class="fa fa-mortar-board"></i>
+                <i class="fa fa-bus"></i>
+                <i class="fa fa-wheelchair"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="important">
+        <div class="payment">
+            {{trial.payment}}
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+
+    <div id="map"></div>
+
+
+</div>

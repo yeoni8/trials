@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script>
+        function initMap(){
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 32.777788, lng: 35.021441},
+                scrollwheel: false,
+                zoom: 16
+            })
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Trials App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    </body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+</head>
+<body ng-app="trials">
+
+<div ng-controller="ctrl">
+    <div class="topbar">
+        <i class="fa fa-arrow-circle-left" style="float:left; margin-left: 3px;margin-top:5px;"></i>
+
+        <i class="fa fa-search" style="font-size:90%"></i>
+        <i class="fa fa-user"></i>
+        <i class="fa fa-cog"></i>
+
+    </div>
+    <trial trial="trial"></trial>
+</div>
+
+
+<div class="options">
+    <i class="fa fa-check" style="float:left; margin-left: 3px;margin-top:5px; color:limegreen"></i>
+    <i class="fa fa-close" style="float:right; margin-right: 3px;margin-top:5px;"></i>
+    <div class="clearfix"></div>
+</div>
+
+<script>
+    var app = angular.module('trials',[]);
+
+
+    app.directive('trial',trialDirective);
+    app.controller('ctrl',ctrl);
+
+    function trialDirective(){
+        return {
+            restrict: 'E',
+            templateUrl: 'trial.html',
+            scope: {trial:'='},
+            link: function(){
+                initMap();
+            }
+        }
+    }
+
+    function ctrl($scope){
+        $scope.trial=   {
+                        name:'Short term memory',
+                        researcher: 'Technion CS faculty',
+                        description: 'A quick quiz on a computer evaluating short term memory capabilities.',
+                        requirements: 'Ages 20-29, low computer background.',
+                        duration: '15 min',
+                        payment: '20$',
+                        location: 'Taub building, Technion, Haifa'
+                        }
+    }
+
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrZ4hdDgb3jhXEdS4i0nKNH8EwbG9c6WM"></script>
+</body>
+</html>
