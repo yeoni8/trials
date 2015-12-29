@@ -1,1 +1,6 @@
 when you dismiss a trial you need to distinguish between if its permanent or temporary - nina suggets a popup
+
+
+change sex to gender
+
+
